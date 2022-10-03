@@ -27,15 +27,15 @@ DROP DATABASE IF EXISTS SpotifyClone;
   INSERT INTO SpotifyClone.usuarios (usuario, idade, data_assinatura, plano)
   VALUES
     ('Barbara Liskov', 82, '2019-10-20', 1),
-    ('Robert Cecil Martin', 58, '2017-01-06', 1),
+    ('Robert Cecil Martin', 58, '2017-1-6', 1),
     ('Ada Lovelace', 37, '2017-12-30', 4),
-    ('Martin Fowler', 46, '2017-01-17', 4),
-    ('Sandi Metz', 58, '2018-04-29', 4),
-    ('Paulo Freire', 19, '2018-02-14', 2),
-    ('Bell Hooks', 26, '2018-01-05', 2),
-    ('Christopher Alexander', 85, '2019-06-05', 3),
-    ('Judith Butler', 45, '2020-05-13', 3),
-    ('Jorge Amado', 58, '2017-02-17', 3);
+    ('Martin Fowler', 46, '2017-1-17', 4),
+    ('Sandi Metz', 58, '2018-4-29', 4),
+    ('Paulo Freire', 19, '2018-2-14', 2),
+    ('Bell Hooks', 26, '2018-1-5', 2),
+    ('Christopher Alexander', 85, '2019-6-5', 3),
+    ('Judith Butler', 45, '2020-5-13', 3),
+    ('Jorge Amado', 58, '2017-2-17', 3);
 
 
   CREATE TABLE SpotifyClone.artistas(
@@ -49,7 +49,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
     ('Queen'),
     ('Elis Regina'),
     ('Baco Exu do Blues'),
-    ('Blund Guardian'),
+    ('Blind Guardian'),
     ('Nina Simone');
 
   CREATE TABLE SpotifyClone.albuns(
@@ -65,7 +65,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
     ('Renaissance', 2022, 1),
     ('Jazz', 1978, 2),
     ('Hot Space', 1982, 2),
-    ('Falso Brilante', 1998, 3),
+    ('Falso Brilhante', 1998, 3),
     ('Vento de Maio', 2001, 3),
     ('QVVJFA?', 2003, 4),
     ('Somewhere Far Beyond', 2007, 5),
@@ -81,7 +81,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
   
   INSERT INTO SpotifyClone.cancoes(cancao, duracao_segundos, album)
   VALUES
-    ('BREAK MY SOUL', 279, 1),
+     ('BREAK MY SOUL', 279, 1),
     ('VIRGO’S GROOVE', 369, 1),
     ('ALIEN SUPERSTAR', 116, 1),
     ('Don’t Stop Me Now', 203, 2),
@@ -89,8 +89,8 @@ DROP DATABASE IF EXISTS SpotifyClone;
     ('Como Nossos Pais', 105, 4),
     ('O Medo de Amar é o Medo de Ser Livre', 207, 5),
     ('Samba em Paris', 267, 6),
-    ('The Brad’s Song', 244, 7),
-    ('Felling Good', 100, 8);
+    ('The Bard’s Song', 244, 7),
+    ('Feeling Good', 100, 8);
 
   CREATE TABLE SpotifyClone.historico_de_reproducoes(
       id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -103,22 +103,22 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
   INSERT INTO SpotifyClone.historico_de_reproducoes(cancao, usuario, data_reproducao)
   VALUES
-	(8, 1, '2022-02-28 10:45:55'),
-	(2, 1, '2020-05-02 05:30:35'),
-	(10, 1, '2020-03-06 11:22:33'),
-	(10, 2, '2022-08-05 08:05:17'),
-	(7, 2, '2020-01-02 07:40:33'),
-	(10, 3, '2020-11-13 16:55:13'),
-	(2, 3, '2020-12-05 18:38:30'),
-	(8, 4, '2021-08-15 17:10:10'),
-	(8, 5, '2022-01-09 01:44:33'),
-	(5, 5, '2020-08-06 15:23:43'),
-	(7, 6, '2017-01-24 00:31:17'),
-	(1, 6, '2017-10-12 12:35:20'),
-	(4, 7, '2011-12-15 22:30:49'),
-	(4, 8, '2012-03-17 14:56:41'),
-	(9, 9, '2022-02-20 21:14:22'),
-	(3, 10, '2015-12-13 08:30:22');
+    (8, 1, '2022-2-28 10:45:55'),
+    (2, 1, '2020-5-2 5:30:35'),
+    (10, 1, '2020-3-6 11:22:33'),
+    (10, 2, '2022-8-5 8:5:17'),
+    (7, 2, '2020-1-2 7:40:33'),
+    (10, 3, '2020-11-13 16:55:13'),
+    (2, 3, '2020-12-5 18:38:30'),
+    (8, 4, '2021-8-15 17:10:10'),
+    (8, 5, '2022-1-9 1:44:33'),
+    (5, 5, '2020-8-6 15:23:43'),
+    (7, 6, '2017-1-24 0:31:17'),
+    (1, 6, '2017-10-12 12:35:20'),
+    (4, 7, '2011-12-15 22:30:49'),
+    (4, 8, '2012-3-17 14:56:41'),
+    (9, 9, '2022-2-24 21:14:22'),
+    (3, 10, '2015-12-13 8:30:22');
 
   CREATE TABLE SpotifyClone.seguindo_artistas(
       id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
